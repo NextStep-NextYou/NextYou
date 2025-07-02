@@ -26,38 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Scroll Reveal effect for .portfolio-section and .card
-(function() {
-  function revealOnScroll() {
-    const revealEls = document.querySelectorAll('[data-sr]');
-    const options = {
-      threshold: 0.12
-    };
-    const observer = new window.IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const el = entry.target;
-          const effect = el.getAttribute('data-sr');
-          const delay = parseInt(el.getAttribute('data-sr-delay') || '0', 10);
-          setTimeout(() => {
-            el.classList.add('sr-revealed', `sr-${effect}`);
-          }, delay);
-          obs.unobserve(el);
-        }
-      });
-    }, options);
-    revealEls.forEach(el => {
-      el.classList.add('sr-init');
-      observer.observe(el);
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', revealOnScroll);
-  } else {
-    revealOnScroll();
-  }
-})();
-
 // Animation orbitale pour la section skills
 (function() {
   const orbitalIcons = document.querySelectorAll('.skills-orbital-small-icons img');
@@ -229,4 +197,24 @@ document.addEventListener('DOMContentLoaded', function() {
       orb.classList.remove('orb-flash');
     }, 500);
   }, 3000);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.portfolio-section .card');
+  cards.forEach((card, i) => {
+    card.classList.add('card-appear');
+  });
+  function revealCardsOnScroll() {
+    const triggerBottom = window.innerHeight * 0.92;
+    cards.forEach((card, i) => {
+      const cardTop = card.getBoundingClientRect().top;
+      if (cardTop < triggerBottom) {
+        setTimeout(() => {
+          card.classList.add('card-visible');
+        }, i * 120);
+      }
+    });
+  }
+  window.addEventListener('scroll', revealCardsOnScroll);
+  revealCardsOnScroll();
 });
