@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Next You</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Next You" id="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="main-bg-container">
+    <img src="background.png" alt="Fond abstrait noir et gris foncé avec formes fluides" id="background" />
+  </div>
+  <main id="home">
+    <img src="titre.png" alt="Titre NEXT YOU stylisé" id="titre" />
+    <p class="subtitle">Next Step ~ Next You</p>
+    <p class="description">
+      NextYou est un studio freelance créatif dédié à la conception sur mesure de portfolios modernes, élégants et puissants, pour les freelances, créatifs, étudiants, développeurs, designers, artistes ou toute personne souhaitant se démarquer professionnellement.<br />
+      Nous croyons que chaque personne a une identité unique à valoriser. Avec NextYou, franchissez une nouvelle étape dans votre carrière, dans votre visibilité, dans votre présentation au monde.
+    </p>
+  </main>
+
+  <!-- SKILLS SECTION DEPLACÉE AVANT SERVICES -->
+  <section class="skills-section" id="skills" data-sr="fade-up">
+    <div class="skills-glass-bg"></div>
+    <canvas class="skills-stars-bg"></canvas>
+    <div class="skills-orbital-container" aria-label="Tech orbital with central image and orbiting tech icons">
+      <!-- Central orb with image -->
+      <div class="skills-central-orb" aria-label="Central glowing orb with main image">
+        <img src="cercle.png" alt="Main central image titled 'cercle.png'" />
+      </div>
+      <!-- Orbital elliptical paths -->
+      <svg class="skills-orbits" aria-hidden="true" viewBox="0 0 900 506" xmlns="http://www.w3.org/2000/svg" role="presentation">
+        <ellipse cx="450" cy="253" rx="420" ry="120" />
+        <ellipse cx="450" cy="253" rx="350" ry="100" />
+        <ellipse cx="450" cy="253" rx="280" ry="80" />
+      </svg>
+      <!-- Small icons on orbital paths -->
+      <div class="skills-orbital-small-icons" aria-hidden="true">
+        <img alt="HTML5 logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="top: 160px; left: 810px;" width="20"/>
+        <img alt="CSS3 logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="top: 130px; left: 860px;" width="20"/>
+        <img alt="JavaScript logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="top: 190px; left: 860px;" width="20"/>
+        <img alt="C++ logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style="top: 180px; left: 780px;" width="20"/>
+        <img alt="Python logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="top: 320px; left: 460px;" width="20"/>
+        <img alt="Java logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style="top: 280px; left: 280px;" width="20"/>
+        <img alt="SQL logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" style="top: 250px; left: 320px;" width="20"/>
+        <img alt="React logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="top: 220px; left: 350px;" width="20"/>
+        <img alt="Node.js logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style="top: 320px; left: 180px;" width="20"/>
+        <img alt="Git logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" style="top: 300px; left: 230px;" width="20"/>
+        <img alt="Figma logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" style="top: 350px; left: 600px;" width="20"/>
+        <img alt="PHP logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" style="top: 100px; left: 700px;" width="20"/>
+        <img alt="Node.js logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style="top: 120px; left: 750px;" width="20"/>
+        <img alt="Git logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" style="top: 200px; left: 900px;" width="20"/>
+        <img alt="SQL logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" style="top: 250px; left: 900px;" width="20"/>
+        <img alt="Bootstrap logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" style="top: 350px; left: 700px;" width="20"/>
+        <img alt="Sass logo on orbital path" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" style="top: 370px; left: 800px;" width="20"/>
+      </div>
+      <!-- Top row icons with connecting lines -->
+      <div class="skills-icons-top" aria-label="Top row technology icons">
+        <div class="icon-wrapper" title="HTML5">
+          <img alt="HTML5 logo" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/>
+        </div>
+        <div class="icon-wrapper" title="CSS3">
+          <img alt="CSS3 logo" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/>
+        </div>
+        <div class="icon-wrapper" title="JavaScript">
+          <img alt="JavaScript logo" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40"/>
+        </div>
+        <div class="icon-wrapper" title="C++">
+          <img alt="C++ logo" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40"/>
+        </div>
+        <div class="icon-wrapper" title="Python">
+          <img alt="Python logo" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40"/>
+        </div>
+        <div class="icon-wrapper" title="Java">
+          <img alt="Java logo" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40"/>
+        </div>
+        <div class="icon-wrapper" title="SQL">
+          <img alt="SQL logo" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-section" id="services" data-sr="fade-up">
+    <div class="container">
+      <div class="top-texts">
+        <span>Passionnés par l'accompagnement</span>
+        <span class="center-text">
+          <img src="about.png" alt="Texte VOTRE PORTFOLIO, VOTRE HISTOIRE en police élégante" />
+        </span>
+        <span>des professionnels pour briller en ligne</span>
+      </div>
+      <p class="main-text description">
+        Avec une solide expertise en design, conception et développement web, nous sommes spécialisés dans la création de portfolios qui ne se contentent pas d'être esthétiques :<br />
+        ils transforment les visiteurs en opportunités.
+      </p>
+      <!-- Modern Cards Section -->
+      <div class="cards-row">
+        <div class="card" data-sr="fade-up" data-sr-delay="0">
+          <div class="card-icon">
+            <!-- Design: Pen/Brush SVG, black & white -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.5 7.5L10.5 25.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M13.5 22.5L7.5 28.5L7.5 28.5C6.67157 29.3284 6.67157 30.6716 7.5 31.5C8.32843 32.3284 9.67157 32.3284 10.5 31.5L16.5 25.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="25.5" cy="10.5" r="2.5" fill="#fff"/>
+            </svg>
+          </div>
+          <h3>Design</h3>
+          <p>Création graphique moderne, identité visuelle unique et expérience utilisateur soignée pour sublimer votre image.</p>
+        </div>
+        <div class="card" data-sr="fade-up" data-sr-delay="120">
+          <div class="card-icon">
+            <!-- Conception: Lightbulb SVG, black & white -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="18" cy="15" rx="9" ry="10" stroke="#fff" stroke-width="2.2"/>
+              <rect x="14" y="25" width="8" height="4" rx="2" fill="#fff"/>
+              <rect x="15.5" y="29" width="5" height="2" rx="1" fill="#fff"/>
+            </svg>
+          </div>
+          <h3>Conception</h3>
+          <p>Structuration intelligente, storytelling impactant et organisation optimale pour valoriser vos projets.</p>
+        </div>
+        <div class="card" data-sr="fade-up" data-sr-delay="240">
+          <div class="card-icon">
+            <!-- Développement: Code/Brackets SVG, black & white -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="13,12 7,18 13,24" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="23,12 29,18 23,24" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="16" y="16" width="4" height="4" rx="1" fill="#fff"/>
+            </svg>
+          </div>
+          <h3>Développement</h3>
+          <p>Sites performants, responsives et sécurisés, réalisés avec les technologies web les plus récentes.</p>
+        </div>
+        <!-- New Card: Portfolios personnalisés -->
+        <div class="card" data-sr="fade-up" data-sr-delay="840">
+          <div class="card-icon">
+            <!-- Portfolios personnalisés: Layers SVG -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7" y="13" width="22" height="12" rx="3" stroke="#fff" stroke-width="2.2"/>
+              <rect x="11" y="7" width="14" height="6" rx="2" stroke="#fff" stroke-width="2.2"/>
+              <rect x="11" y="25" width="14" height="4" rx="2" stroke="#fff" stroke-width="2.2"/>
+            </svg>
+          </div>
+          <h3>Portfolios personnalisés</h3>
+          <p>Un portfolio à votre image, pensé sur-mesure pour mettre en valeur votre parcours et vos réalisations.</p>
+        </div>
+        <!-- New Card: Refonte de portfolio -->
+        <div class="card" data-sr="fade-up" data-sr-delay="960">
+          <div class="card-icon">
+            <!-- Refonte: Refresh/Arrow SVG -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18c0-5 4-9 9-9 2.5 0 4.7 1 6.3 2.7M27 18c0 5-4 9-9 9-2.5 0-4.7-1-6.3-2.7" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+              <polyline points="22,7 25,11 20,11" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="14,29 11,25 16,25" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Refonte de portfolio</h3>
+          <p>Modernisez votre présence en ligne avec une refonte complète, adaptée aux dernières tendances et technologies.</p>
+        </div>
+        <!-- New Card: Kit Réseaux Sociaux -->
+        <div class="card" data-sr="fade-up" data-sr-delay="1080">
+          <div class="card-icon">
+            <!-- Kit Réseaux Sociaux: Share/Network SVG -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="18" r="3" stroke="#fff" stroke-width="2.2"/>
+              <circle cx="26" cy="10" r="3" stroke="#fff" stroke-width="2.2"/>
+              <circle cx="26" cy="26" r="3" stroke="#fff" stroke-width="2.2"/>
+              <line x1="12.5" y1="16.5" x2="23.5" y2="11.5" stroke="#fff" stroke-width="2.2"/>
+              <line x1="12.5" y1="19.5" x2="23.5" y2="24.5" stroke="#fff" stroke-width="2.2"/>
+            </svg>
+          </div>
+          <h3>Kit Réseaux Sociaux</h3>
+          <p>Des visuels et templates professionnels pour booster votre image sur tous les réseaux sociaux.</p>
+        </div>
+        <!-- New Card: CV Web -->
+        <div class="card" data-sr="fade-up" data-sr-delay="360">
+          <div class="card-icon">
+            <!-- CV Web: User/Document SVG -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="6" width="20" height="24" rx="3" stroke="#fff" stroke-width="2.2"/>
+              <circle cx="18" cy="15" r="4" stroke="#fff" stroke-width="2.2"/>
+              <rect x="13" y="22" width="10" height="2.5" rx="1.2" fill="#fff"/>
+            </svg>
+          </div>
+          <h3>CV Web</h3>
+          <p>Un CV interactif, moderne et accessible partout, pour valoriser votre parcours et vos compétences en ligne.</p>
+        </div>
+        <!-- New Card: Vitesse -->
+        <div class="card" data-sr="fade-up" data-sr-delay="480">
+          <div class="card-icon">
+            <!-- Vitesse: Speedometer SVG -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="14" stroke="#fff" stroke-width="2.2"/>
+              <path d="M18 18L26 14" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="18" cy="18" r="2.5" fill="#fff"/>
+            </svg>
+          </div>
+          <h3>Vitesse</h3>
+          <p>Nous réalisons votre site rapidement, sans compromis sur la qualité, pour que vous soyez en ligne en un temps record.</p>
+        </div>
+        <!-- New Card: Maintenance & Suivi -->
+        <div class="card" data-sr="fade-up" data-sr-delay="600">
+          <div class="card-icon">
+            <!-- Maintenance: Shield/Check SVG -->
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L29 11V18C29 25 18 30 18 30C18 30 7 25 7 18V11L18 6Z" stroke="#fff" stroke-width="2.2"/>
+              <path d="M14.5 18.5L17 21L22 16" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Maintenance & Suivi</h3>
+          <p>Un site vivant, c'est un site suivi.<br>Mises à jour, sécurité, évolution… On veille sur votre projet même après sa livraison.</p>
+        </div>
+      </div>
+      <div class="bottom-image-container">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact" data-sr="fade-up">
+    <div class="contact-cards">
+      <div class="contact-card">
+        <img src="ig_qr.png" alt="QR Code Instagram" />
+      </div>
+      <div class="contact-card">
+        <img src="tk_qr.png" alt="QR Code TikTok" />
+      </div>
+    </div>
+    <img src="tel.png" alt="Téléphone" class="contact-side-image" />
+    <div class="contact-container">
+      <div class="contact-title">
+        <h2>Get in touch</h2>
+      </div>
+      <div class="contact-content">
+        <form class="contact-form" action="https://formsubmit.co/nextstep.nextyou@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Your Name" required />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+          <button type="submit">Contact Us</button>
+          <div class="form-socials">
+            <a href="https://www.instagram.com/nextstep.nextyou/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@nextstep_nextyou?is_from_webapp=1&sender_device=pc" aria-label="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
