@@ -166,6 +166,17 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileMenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
+  // Ajout : fermeture du menu si clic en dehors
+  document.addEventListener('click', function(e) {
+    if (mobileMenu.classList.contains('open')) {
+      if (!mobileMenu.contains(e.target) && !burger.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+    }
+  });
   links.forEach(link => {
     link.addEventListener('click', function() {
       mobileMenu.classList.remove('open');
